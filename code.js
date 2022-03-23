@@ -13,3 +13,15 @@ function sayHello(input) {
         return "Hello, " + input + "!";
     }
 }
+
+
+// isFive function
+function isFive(input) {
+    if (input === 5) {
+        return true;
+    } else if (typeof input === 'string') {
+        return "That's a string!"
+    } else {
+        return false;
+    }
+}
