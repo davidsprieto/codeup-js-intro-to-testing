@@ -14,13 +14,21 @@ function sayHello(input) {
     }
 }
 
-
 // isFive function
 function isFive(input) {
     if (input === 5) {
         return true;
     } else if (typeof input === 'string') {
-        return "That's a string!"
+        return "false, that's a string!";
+    } else {
+        return false;
+    }
+}
+
+// isEven function
+function isEven(input) {
+    if (input % 2 === 0) {
+        return true;
     } else {
         return false;
     }

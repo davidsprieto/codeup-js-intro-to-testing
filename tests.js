@@ -53,7 +53,18 @@ describe('isFive', function() {
     it('should return a boolean when passed 5', function() {
         expect(isFive(5)).toBe(true);
     });
-    it("should return 'That's a string!' when passed '5'", function() {
-        expect(isFive('5')).toBe("That's a string!");
+    it("should return 'false, that's a string!' when passed '5'", function() {
+        expect(isFive('5')).toBe("false, that's a string!");
     });
+});
+
+// Unit tests for isEven function
+describe('isEven', function() {
+    it('should be a defined function', function () {
+       expect(typeof isEven).toBe('function');
+    });
+    it('should return true when executed with isEven(2)', function () {
+        expect(isEven(2)).toBe(true);
+    });
+
 });
