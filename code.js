@@ -35,3 +35,21 @@ function isEven(input) {
         return false;
     }
 }
+
+// isVowel function
+function isVowel(input) {
+    if (input === "a" || input === "A") {
+        return true;
+    } else {
+        return false;
+    }
+}
+
+// add function
+function add(a, b) {
+    if (a === "banana" || b === "apples" || a === undefined) {
+       return ("NaN");
+    } else {
+        return (Number(a) + Number(b));
+    }
+}
