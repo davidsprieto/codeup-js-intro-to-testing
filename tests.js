@@ -66,5 +66,30 @@ describe('isEven', function() {
     it('should return true when executed with isEven(2)', function () {
         expect(isEven(2)).toBe(true);
     });
-
+    it('should return true when executed with isEven(-4)', function() {
+        expect(isEven (-4)).toBe(true);
+    });
+    it('should return false when executed with isEven(3)', function () {
+        expect(isEven (3)).toBe(false);
+    });
+    it('should return false when executed with isEven("banana")', function () {
+        expect(isEven ("banana")).toBe(false);
+    });
+    it('should return true when executed with isEven("8")', function () {
+        expect(isEven ("8")).toBe(true);
+    });
+    it('should return false when executed with isEven(Infinity)', function () {
+        expect(isEven (Infinity)).toBe(false);
+    });
+    it('should return false when executed with isEven(true)', function () {
+        expect(isEven (true)).toBe(false);
+    });
+    it('should return false when executed with isEven(false)', function () {
+        expect(isEven (false)).toBe(false);
+    });
+    it('should return false when executed with isEven()', function () {
+        expect(isEven ()).toBe(false);
+    });
 });
+
+// Unit tests for isVowel function

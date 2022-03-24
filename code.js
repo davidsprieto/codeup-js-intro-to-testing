@@ -27,7 +27,9 @@ function isFive(input) {
 
 // isEven function
 function isEven(input) {
-    if (input % 2 === 0) {
+    if (typeof input === 'boolean') {
+        return false;
+    } else if (input % 2 === 0) {
         return true;
     } else {
         return false;
